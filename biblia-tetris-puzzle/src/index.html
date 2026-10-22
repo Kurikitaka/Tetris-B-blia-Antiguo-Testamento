@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rompecabezas Bíblico - Antiguo Testamento</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Rompecabezas Bíblico: Antiguo Testamento</h1>
+    <p>Organiza las 39 fichas en orden cronológico en el tablero 12x13</p>
+    <div class="controls">
+      <button id="btn-new-game">Nueva Partida</button>
+      <button id="btn-pdf">Generar PDF Imprimible</button>
+    </div>
+  </header>
+
+  <div class="game-container">
+    <div id="board" class="board"></div>
+    <div class="bank-panel">
+      <h3>Banco de Fichas (39 Libros)</h3>
+      <div id="piece-bank" class="piece-bank"></div>
+    </div>
+  </div>
+
+  <div id="victory-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>¡Felicidades! 🎉</h2>
+      <p>Has completado correctamente los 39 libros del Antiguo Testamento.</p>
+      <button onclick="initGame()">Jugar de Nuevo</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/generator.js"></script>
+  <script src="js/pdf.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

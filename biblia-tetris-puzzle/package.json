@@ -1,0 +1,12 @@
+{
+  "name": "biblia-tetris-puzzle",
+  "version": "1.0.0",
+  "description": "Rompecabezas Bíblico interactivo de 39 fichas estilo Tetris",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "npx serve src"
+  },
+  "keywords": ["bible", "puzzle", "tetris", "educational"],
+  "author": "",
+  "license": "MIT"
+}
